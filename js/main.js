@@ -5,7 +5,7 @@ const orderDialog = document.getElementById('order-dialog');
 const orderButtons = document.querySelectorAll('.product-card__button');
 
 // Получаем кнопку закрытия модального окна.
-const closeDialogButton = document.getElementById('close-order-dialog');
+const closeDialogButton = document.querySelector('.order-dialog .button--secondary');
 
 // Получаем скрытое поле, в которое будет записан выбранный товар.
 const selectedProductInput = document.getElementById('selected-product');
