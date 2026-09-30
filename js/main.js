@@ -35,6 +35,13 @@ const orderForm = document.getElementById('order-form');
 // Получаем сообщение об успешной отправке.
 const successMessage = document.getElementById('success-message');
 
+orderForm.addEventListener('input', (event) => {
+  const el = event.target;
+  if (el.willValidate && el.checkValidity()) {
+    el.removeAttribute('aria-invalid');
+  }
+})
+
 // Обрабатываем отправку формы.
 orderForm.addEventListener('submit', (event) => {
   // Отменяем стандартную отправку формы,
@@ -71,4 +78,8 @@ orderForm.addEventListener('submit', (event) => {
 
   // Закрываем модальное окно.
   orderDialog.close();
+
+  setTimeout(() => {
+    successMessage.hidden = true;
+  }, 5000);
 });
