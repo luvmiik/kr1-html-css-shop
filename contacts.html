@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Контактная информация учебного интернет-магазина.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Учебный интернет-магазин">
-  <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
-  <meta property="og:image" content="https://username.github.io/kr1-html-css-shop/images/preview.jpg">
-  <title>Контакты — Учебный интернет-магазин</title>
+  <meta name="description" content="Контакты магазина книг Харуки Мураками.">
+  <title>Контакты — Мураками Книги</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <a class="site-header__logo" href="index.html">
+        <span class="site-header__logo-mark">HM</span>
+        <span class="site-header__logo-text">Мураками&nbsp;Книги</span>
+      </a>
 
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
@@ -28,9 +28,7 @@
             <a class="site-nav__link site-nav__link--active" href="contacts.html">Контакты</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#popular">
-              Популярные товары
-            </a>
+            <a class="site-nav__link" href="index.html#popular">Бестселлеры</a>
           </li>
         </ul>
       </nav>
@@ -45,30 +43,44 @@
 
 
     <section class="section">
-      <h1>Контакты</h1>
-      <p>
-        Здесь размещается контактная информация учебного интернет-магазина.
+      <h1 class="section__title">Контакты</h1>
+      <p class="section__lead">
+        Свяжитесь с нами удобным способом — отвечаем в течение рабочего дня.
       </p>
 
-      <ul>
-        <li>Телефон: +7 (900) 000-00-00</li>
-        <li>E-mail: info@example.com</li>
-        <li>Адрес: г. Москва, учебный проект</li>
+      <ul class="contacts-list">
+        <li class="contacts-list__item">
+          <span class="contacts-list__label">Телефон</span>
+          <span class="contacts-list__value">+7 (900) 000-00-00</span>
+        </li>
+        <li class="contacts-list__item">
+          <span class="contacts-list__label">E-mail</span>
+          <span class="contacts-list__value">info@murakami-books.ru</span>
+        </li>
+        <li class="contacts-list__item">
+          <span class="contacts-list__label">Адрес</span>
+          <span class="contacts-list__value">г. Москва, ул. Книжная, д. 1</span>
+        </li>
+        <li class="contacts-list__item">
+          <span class="contacts-list__label">Режим работы</span>
+          <span class="contacts-list__value">Пн–Вс, 10:00–21:00</span>
+        </li>
       </ul>
     </section>
 
     <section class="section" id="feedback">
-      <h2>Обратная связь</h2>
-      <p>
-        Для отправки заявки используйте форму в модальном окне на главной странице.
+      <h2 class="section__title">Обратная связь</h2>
+      <p class="section__lead">
+        Оформить заявку на книгу можно через форму на главной или в каталоге.
       </p>
-      <a class="button" href="index.html#contacts">Перейти к форме</a>
+      <a class="button button--primary" href="index.html#popular">Перейти к книгам</a>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Мураками Книги. Учебный проект.</p>
+    </div>
   </footer>
 </body>
 </html>
